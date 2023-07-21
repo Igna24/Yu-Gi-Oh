@@ -17,6 +17,7 @@ All rights reserved. This work is the exclusive property of Ignacio Marín Garro
 1. Download the source code from the repository.
 2. Run the following command in the terminal to install the server dependencies:
   - $npm install
+
 ## Usage Instructions
 1. Start the server with the following command:
   - $node server.js
@@ -28,6 +29,7 @@ All rights reserved. This work is the exclusive property of Ignacio Marín Garro
 6. To search for cards, enter the search term in the search field and click the "Search" button.
 7. Cards can be filtered by type using the "Filter by Type" dropdown menu.
 8. The cards are displayed in paginated form, and you can navigate between pages by clicking on the page numbers at the bottom.
+
 ## Project Structure
 - `server.js`: Main file containing the Express server and routes to manage cards in the MongoDB database.
 - `scripts.js`: JavaScript script file that handles DOM interaction and AJAX requests to load, edit, delete, and search for cards on the server.
