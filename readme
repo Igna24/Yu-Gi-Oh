@@ -1,53 +1,60 @@
 # Yu-Gi-Oh! Card Registry
 
 ## Description
-This project is a system for registering and searching cards for the Yu-Gi-Oh! trading card game. The system allows users to add new cards, edit existing cards, delete cards, and search for cards by name or type. Additionally, the cards are displayed in paginated form to facilitate navigation.
 
-## Created By
+This project provides a system for registering and searching Yu-Gi-Oh! trading cards. Users have the capability to add new cards, modify existing ones, remove cards, and conduct searches by card name or type. The interface displays the cards in a paginated format to simplify navigation.
+
+## Created by
+
 Ignacio Marín Garro
 
 ## Copyright
-All rights reserved. This work is the exclusive property of Ignacio Marín Garro. Distribution and reproduction, in whole or in part, of this project without explicit consent from the author is prohibited.
+
+All rights reserved. The intellectual property of this work belongs exclusively to Ignacio Marín Garro. Unauthorized distribution or reproduction, partially or entirely, of this project is strictly forbidden without explicit permission from the author.
 
 ## Prerequisites
-- Node.js and npm must be installed on the system to run the server.
-- Access to a MongoDB database is required, and the `MONGODB_URI` variable in `server.js` must be configured with the connection URL.
+
+- Node.js and npm must be installed on your system to run the server.
+- A MongoDB database must be accessible, with the `MONGODB_URI` variable in `server.js` set to the correct connection URL.
 
 ## Installation
+
 1. Download the source code from the repository.
-2. Run the following command in the terminal to install the server dependencies:
-  - $npm install
+2. Execute the following command in the terminal to install server dependencies:
+   - `npm install`
 
 ## Usage Instructions
-1. Start the server with the following command:
-  - $node server.js
 
-2. Access the system through the web browser at the URL `http://localhost:3000`.
-3. On the home page, you can register a new card by filling out the creation form.
-4. To edit an existing card, click on the desired card in the list of created cards, which will display the edit form.
-5. To delete a card, click on the "Delete" button in the edit form.
-6. To search for cards, enter the search term in the search field and click the "Search" button.
-7. Cards can be filtered by type using the "Filter by Type" dropdown menu.
-8. The cards are displayed in paginated form, and you can navigate between pages by clicking on the page numbers at the bottom.
+1. Launch the server by entering:
+   - `node server.js`
+2. Open `http://localhost:3000` in a web browser to access the system.
+3. Add a new card via the creation form on the home page.
+4. To edit a card, select it from the created card list to bring up the edit form.
+5. Remove a card using the "Delete" option within the edit form.
+6. Perform card searches by typing into the search box and clicking "Search".
+7. Filter the cards by type with the "Filter by Type" selection menu.
+8. Navigate through the paginated card display by selecting page numbers at the bottom.
 
 ## Project Structure
-- `server.js`: Main file containing the Express server and routes to manage cards in the MongoDB database.
-- `scripts.js`: JavaScript script file that handles DOM interaction and AJAX requests to load, edit, delete, and search for cards on the server.
-- `index.html`: Main page of the system that displays the form for adding new cards and the list of created cards.
-- `styles.css`: Stylesheet for the site's appearance.
+
+- `server.js`: The main server file with Express routes for card management in the MongoDB database.
+- `scripts.js`: A JavaScript file managing DOM interactions and AJAX requests for card operations.
+- `index.html`: The primary system page, showing the new card form and the card list.
+- `styles.css`: The style sheet for the website's design.
 
 ## Technologies Used
+
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose (ODM)
+- Mongoose (Object Data Modeling library)
 - jQuery
 - HTML5
 - CSS3
 
 ## Additional Notes
-- Ensure that you have a valid connection to the MongoDB database before running the server to avoid errors in database requests.
-- This project has been developed for educational purposes and may require additional adjustments and improvements for implementation in a production environment.
 
-**Enjoy managing your Yu-Gi-Oh! cards!**
+- Verify a proper MongoDB database connection before starting the server to prevent database-related errors.
+- This project is intended for educational uses and might need more tuning and enhancement for production deployment.
 
+**Enjoy organizing your Yu-Gi-Oh! card collection!**
